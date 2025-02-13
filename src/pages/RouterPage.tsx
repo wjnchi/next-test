@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 
-export const RouterPage: React.FC = () => {
+const RouterPage: React.FC = () => {
   const router = useRouter();
 
   return (
@@ -88,3 +88,5 @@ export const RouterPage: React.FC = () => {
     </div>
   );
 };
+
+export default RouterPage;
