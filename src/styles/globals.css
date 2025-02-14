@@ -5,7 +5,6 @@
 @layer utilities {
   @theme {
     --animate-dance: dance 1s linear infinite;
-    --animate-circle: circle 2s linear infinite;
   }
 
   @keyframes dance {
@@ -19,7 +18,7 @@
       transform: rotateY(360deg) rotateZ(360deg);
     }
   }
-  @keyframes circle {
+  @keyframes lovecircle {
     0% {
       transform: rotate(0deg);
     }
@@ -30,9 +29,8 @@
   .animate-dance {
     animation: var(--animate-dance);
   }
-  .animate-circle {
-    animation: var(--animate-circle);
-    display: inline-block;
+  .animate-lovecircle {
+    animation: lovecircle 2s linear infinite;
   }
 }
 /*! tailwindcss v4.0.4 | MIT License | https://tailwindcss.com */

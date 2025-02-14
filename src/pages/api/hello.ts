@@ -1,13 +1,14 @@
 // // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-// import type { NextApiRequest, NextApiResponse } from "next";
+import type { NextApiRequest, NextApiResponse } from "next";
 
-// type Data = {
-//   name: string;
-// };
+type Data = {
+  name: string;
+};
 
-// export default function handler(
-//   req: NextApiRequest,
-//   res: NextApiResponse<Data>,
-// ) {
-//   res.status(200).json({ name: "David Tao" });
-// }
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<Data>,
+) {
+  console.log(process.env.DATABASE_URL)
+  res.status(200).json({ name: `${process.env.DATABASE_URL}` });
+}

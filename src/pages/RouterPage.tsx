@@ -32,17 +32,18 @@ const RouterPage: React.FC = () => {
         {/* <div className="animate-circle">123</div> */}
         <div
           className="  
-           fixed 
+           absolute
            top-1/2 
            left-1/2 
            -translate-x-1/2 
-           -translate-y-[40%] 
+           -translate-y-1/2
            w-60
            h-60
-           rounded-full 
-           animate-[spin_1.5s_linear_infinite]
+           rounded-full
+           animate-lovecircle
            font-bold
-           text-3xl"
+           text-3xl
+           "
         >
           David Tao💗
         </div>
