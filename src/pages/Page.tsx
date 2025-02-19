@@ -2,6 +2,7 @@
 import { neon } from '@neondatabase/serverless';
 
 export default function Page() {
+  
   async function create(formData: FormData) {
     'use server';
     // Connect to the Neon database
@@ -10,6 +11,7 @@ export default function Page() {
     // Insert the comment from the form into the Postgres database
     await sql('INSERT INTO comments (comment) VALUES ($1)', [comment]);
   }
+
   return (
     <form action={create}>
       <input type="text" placeholder="write a comment" name="comment" />
