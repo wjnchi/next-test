@@ -1,4 +1,3 @@
-import pre from "@douyinfe/semi-ui/lib/es/markdownRender/components/code";
 
 const Mission3: React.FC = () => {
   const sug = {
